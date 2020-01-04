@@ -21,7 +21,7 @@ else
 			-k | --key ) shift
 				key=$1
 				;;
-			-s | --shares ) shift
+			-o | --objectives ) shift
 				objectives=$1
 				;;
 			-t | --threshold ) shift
