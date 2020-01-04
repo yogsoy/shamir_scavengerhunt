@@ -2,7 +2,7 @@
 Scavenger hunts using Shamir's Secret Sharing Scheme
 
 ## Prerequisites
-* You should know how Shamir's Secret Sharing Scheme (SSSS) works
+* You should know how Shamir's Secret Sharing Scheme (SSSS) works (I highly recommend [Matt Parker's video](https://youtu.be/K54ildEW9-Q) on the subject)
 * `ssss`
 * `qrencode`
 
