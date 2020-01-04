@@ -1,16 +1,42 @@
 #!/bin/bash
 
-echo "Name:"
-read name
+if [ "$1" == "" ]; then
+	echo "Name:"
+	read name
 
-echo "Key:"
-read key
+	echo "Key:"
+	read key
 
-echo "Objectives:"
-read objectives
+	echo "Objectives:"
+	read objectives
 
-echo "Threshold:"
-read threshold
+	echo "Threshold:"
+	read threshold
+else
+	while [ "$1" != "" ]; do
+		case $1 in
+			-n | --name ) shift
+				name=$1
+				;;
+			-k | --key ) shift
+				key=$1
+				;;
+			-s | --shares ) shift
+				objectives=$1
+				;;
+			-t | --threshold ) shift
+				threshold=$1
+				;;
+		esac
+		shift
+	done
+fi
+
+x="hiya"
+if [ -z ${name+x} ] || [ -z ${key+x} ] || [ -z ${objectives+x} ] || [ -z ${threshold+x} ]; then
+	echo "All or none of name, key, objectives, and threshold must be set (-nknt)."
+	exit
+fi
 
 foldername=$(cat <(printf $name) <(printf _$(date +%Y-%m)))
 
