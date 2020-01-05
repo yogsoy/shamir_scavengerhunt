@@ -49,3 +49,5 @@ Once the android app has been installed from the provided APK, usage should be i
 5. Once the threshold of objectives has been reached, the scan counter will turn green and the `[Finish]` button will become active. Tap this, and there will be a short pause until the result (goal text) is shown.
 	* ***This pause is because in the most current version, the app uses what is effectively an online API (hijacks [pointatinfinity's SSSS demo site](http://point-at-infinity.org/ssss/demo.html)). This means that the app is currently not fully usable offline.***
 6. On the result screen is a selectable *(and editable)* text box containing the output of the combination. Press the `[New Hunt]` button at the bottom of the screen to remove all scans and reset the threshold.
+
+*If anyone happens to know how to make a text field selectable and not editable (read-only, but working correctly) in the MIT AppInventor, hmu*
