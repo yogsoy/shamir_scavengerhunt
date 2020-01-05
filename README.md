@@ -24,7 +24,7 @@ Command-line options are:
 	* if this is present the QR codes will be printed to the specified printer. Otherwise, they can be manually printed or displayed using the image files generated.
 
 ## File Structure
-Once a hunt has been created, it will be put in a folder within the current directory. For example a hunt with the name "hunter2", created in February of 2020 (5 objectives):
+Once a hunt has been created, it will be put in a folder within the current directory. For example, a hunt with the name "hunter2", created in February of 2020 (5 objectives):
 * hunter2_2020-02
 	* qr/
 		* 1.png
