@@ -36,8 +36,18 @@ if [ -z ${objectives+x} ]; then
 	read objectives
 fi
 if [ -z ${threshold+x} ]; then
-	echo "Threshold"
+	echo "Threshold:"
 	read threshold
+fi
+if [ -z ${print+x} ]; then
+	echo "Print?"
+	printf "[y/n] "
+	read printyn
+fi
+
+if [ "$printyn" == "y" ]; then
+	echo "Printer name:"
+	read print
 fi
 
 foldername=$(cat <(printf $name) <(printf _$(date +%Y-%m)))
@@ -54,4 +64,6 @@ done < $foldername/objectives
 
 montage $foldername/qr/* -mode concatenate $foldername/qr/all.png
 
-
+if [ "$print" != "" ]; then
+	lp -d $print $foldername/qr/all.png
+fi
