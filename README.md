@@ -15,7 +15,7 @@ Command-line options are:
 * -n, --name [name] *
 	* Name of hunt (generated hunts are put in folders by the format of NAME_YYYY_MM)
 * -k, --key [key] *
-	* "key" for hunt - the output message from combined shares (objectives)
+	* goal message for hunt - the output from combining the shares (objectives)
 * -o, --objectives [count] *
 	* Number of objectives to be generated
 * -t, --threshold [count] *
