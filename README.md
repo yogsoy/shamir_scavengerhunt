@@ -25,7 +25,7 @@ Command-line options are:
 
 ## File Structure
 Once a hunt has been created, it will be put in a folder within the current directory. For example, a hunt with the name "hunter2", created in February of 2020 (5 objectives):
-* hunter2_2020-02
+* hunter2_2020-02/
 	* qr/
 		* 1.png
 		* 2.png
