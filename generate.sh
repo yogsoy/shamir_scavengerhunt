@@ -52,7 +52,7 @@ fi
 
 foldername=$(cat <(printf $name) <(printf _$(date +%Y-%m)))
 
-mkdir $foldername $foldername/qr
+mkdir -p $foldername/qr
 
 echo $key > $foldername/key
 
